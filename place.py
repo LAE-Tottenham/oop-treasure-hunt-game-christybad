@@ -1,11 +1,13 @@
 class Place():
-    def __init__(self, given_name, given_size, locked=False):
+    def __init__(self, name, number, locked=False):
         # locked=False means that the locked parameter will be False by default if not provided.
-        self.name = given_name
-        self.size = given_size
+        self.name = name
+        self.number = number
         self.locked = locked
         self.next_places = []
         self.items = []
+        
+
         # add more atributes as needed
 
     def add_next_place(self, place_instance):
